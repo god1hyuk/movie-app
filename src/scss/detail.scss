@@ -1,0 +1,60 @@
+.detail-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: .45;
+	z-index: -1;
+}
+
+.prev-btn {
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	margin: 30px;
+}
+
+.movie-info {
+	width: 1240px;
+	color: #fff;
+	margin: 50px auto 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	// border: 1px solid #fff;
+
+	&__basic {
+		display: flex;
+	}
+
+	&__details {
+		width: calc(100% - 500px);
+		margin-left: 50px;
+	}
+
+	&__title {
+		font-size: 32px;
+	}
+
+	&__genres {
+		display: flex;
+		margin-top: 20px;
+		
+		li {
+			font-size: 16px;
+			color: #61dbfb;
+			margin-right: 10px;
+		}
+	}
+	&__rating {
+		font-size: 20px;
+		margin-top: 20px;
+		span {
+			margin-left: 8px;
+		}
+	}
+}
