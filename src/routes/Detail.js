@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import ReactPlayer from 'react-player/lazy';
+// import ReactPlayer from 'react-player/lazy';
 import '../scss/detail.scss';
 
 function Detail() {
@@ -37,12 +37,12 @@ function Detail() {
 						</div>
 					</div>
 				</div>
-				<ReactPlayer
+				{/* <ReactPlayer
 					url={`http://youtu.be/${movie.yt_trailer_code}`}
 					width="1240px"
 					height="500px"
 					controls={true}
-				/>
+				/> */}
 			</div>
 		</div>
 	);
