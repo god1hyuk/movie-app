@@ -1,8 +1,30 @@
+.main-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 1380px;
+	margin: 30px auto 80px;
+}
+
+.select-wrap {
+	label {
+		font-size: 18px;
+		color: #fff;
+		margin-right: 10px;
+	}
+
+	.select-rating {
+		width: 230px;
+		height: 40px;
+		margin-bottom: 30px;
+		padding: 0 5px;
+		border: none;
+	}
+}
+
 .movie-list {
 	display: flex;
 	flex-wrap: wrap;
-	width: 1440px;
-	margin: 0 auto;
 }
 
 .movie-card {
@@ -13,15 +35,14 @@
 		position: relative;
 		width: 230px;
 		height: 345px;
-		margin: 3px;
 		text-decoration: none;
-		overflow: hidden;
 	}
 	
 	&__title {
 		text-align: center;
 		font-size: 20px;
 		color: #fff;
+		padding: 0 10px;
 		opacity: 0;
 		transition: opacity .13s;
 	}

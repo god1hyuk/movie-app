@@ -18,6 +18,32 @@ a {
 	justify-content: space-between;
 }
 
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 35px;
+
+	.prev-btn {
+		display: block;
+		color: #fff;
+		font-size: 24px;
+		letter-spacing: -6px;
+		transition: transform .13s;
+		&:hover {
+			transform: translateX(-3px);
+		}
+	}
+
+	.logo {
+		font-family: 'BebasNeue';
+		font-size: 54px;
+		color: #61dbfb;
+		text-shadow: 2px 1px 3px rgba(255, 255, 255, .3);
+		user-select: none;
+	}
+}
+
 .loading {
 	position: absolute;
 	top: 50%;
