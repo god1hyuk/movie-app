@@ -14,8 +14,8 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route exact path={`/`} element={<Home />} />
-        <Route exact path={`/movie/:id`} element={<Detail />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/movie/:id" element={<Detail />} />
       </Routes>
     </Router>
   );

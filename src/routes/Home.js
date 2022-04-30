@@ -15,7 +15,7 @@ function Home() {
     setLoading(false);
   }
   const handleChangeRating = (e) => {
-    setRating(Number(e.target.value));
+    setRating(e.target.value);
   }
   useEffect(() => {
     getMovies();
@@ -27,7 +27,7 @@ function Home() {
           <h1 className="loading">Loading...</h1> :
           <div className="main-content">
             <div className="select-wrap">
-              <label for="selectRating">Rating</label>
+              <label htmlFor="selectRating">Rating</label>
               <select
                 id="selectRating"
                 onChange={handleChangeRating}

@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
 	const currentPath = useLocation();
-	console.log(currentPath);
 	return (
 		<header>
 			{currentPath.pathname === "/" ? null : <Link to="/" className="prev-btn">◀︎◀︎</Link>}
